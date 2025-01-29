@@ -1784,12 +1784,17 @@ section .featured-buttons button:hover{
 .deals-box .deal-1{
     height: 400px;
     width: 600px;
-    background-image: url(../Assets/img/deals-1.jpg);
+    background-image: url(../Assets/deals-1.jpg);
 }
 
 
 .deals-box .deal-2{
     height: 400px;
     width: 600px;
-    background-image: url(../Assets/img/deals-2.png);
+    background-image: url(../Assets/deals-2.png);
+}
+
+.deals-box .deal-1 .heading{
+    font-size: 40px;
+    color: rgb(23, 101, 75);
 }
