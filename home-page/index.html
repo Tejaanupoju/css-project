@@ -1,48 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../home-page/styles.css">
-    <title>CLOTHING</title>
+    <title>Shopping-cart</title>
+    <link rel="stylesheet" href="../Home-page/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <img src="/Assets/logo.png" alt="logo">
-            </div>
-                <nav>
-                
-                    <div>
-                        <a href="/home-page">Home</a>
-                    </div>
-                    <div>
-                        <a href="/">shop</a>
-                    </div>
-                    <div>
-                        <a href="">My Account</a>
-                    </div>
-                    <div>
-                        <a href="">compare</a>
-                    </div>
-                    <div>
-                        <a href="">Login</a>
-                    </div>
-                </nav>
-            <div class ="search-bar">
-                <input type="search" placeholder="Search" name="search" id="search" >
-                <img src="/Assets/search.png" alt="search-icon" class="search-icon">
-            </div>
-            <div class="fav">
-                <img src="/Assets/icon-heart.svg" alt="love">
-            </div>
-            <div>
-                <img src="/Assets/icon-cart.svg" alt="cart">
-            </div>
-        </header>
 
+<body>
+    <!--Header starts Here-->
+    <header>
+        <div class="logo">
+            <img src="../Assets/logo.png" alt="company-logo">
+        </div>
+        <nav>
+            <div class="home">
+                <a href="../home-page/index.html"><span><strong>Home</strong></span></a>
+            </div>
+            <div class="shop">
+                <a href="../shop/shop.html" target="_self"><span><strong>Shop</strong></span></a>
+            </div>
+            <div class="my-account">
+                <a href="../myaccount/myaccount.html"><span><strong>My <br>Account</strong></span></a>
+            </div>
+            <div class="compare">
+                <a href="#"><span><strong>Compare</strong></span></a>
+            </div>
+            <div class="login">
+                <a href="#"><span><strong>Login</strong></span></a>
+            </div>
+        </nav>
+        <div class="search-bar">
+            <input type="search" name="search" id="search" placeholder="   Search For Items...">
+            <div class="image">
+                <img src="../Assets/img/search.png" alt="search-icon">
+            </div>
+        </div>
+        <div class="favourite">
+            <img src="../Assets/img/icon-heart.svg" alt="favourite">
+            <div class="fav-three">
+                <p>3</p>
+            </div>
+        </div>
+        <div class="cart">
+            <img src="../Assets/img/icon-cart.svg" alt="Shopping-cart">
+            <div class="cart-three">
+                <p>3</p>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header ends Here-->
+    <div class="promotion-card">
+        <div class="headings">
+            <p id="p-1">Hot Promotions</p>
+            <h2 id="line-one">Fashion Trending</h2>
+            <h2 id="line-two">Great Collection</h2>
+            <p>Save more with coupons & upto 20% off</p>
+            <button>Shop Now</button>
+        </div>
+        <div class="promotion-img">
+            <img src="../Assets/img/home-img.png" alt="promotion-img">
+        </div>
     </div>
-   
+
+    <div class="banner-img">
+        <div class="heading">
+            <h3><span id=first-word>Popular</span> Categories</h3>
+            <div class="buttons">
+                <a href="#"><button>
+                        < </button></a>
+                <a href="#"><button> > </button></a>
+            </div>
+        </div>
+        <div class="items">
+            <div class="T-shirt">
+                <img src="../Assets/img/category-1.jpg" alt="">
+                <p class="caption">T-shirt</p>
+            </div>
+            <div class="Bags">
+                <img src="../Assets/img/category-2.jpg" alt="">
+                <p class="caption">Bags</p>
+            </div>
+            <div class="Sandal">
+                <img src="../Assets/img/category-3.jpg" alt="">
+                <p class="caption">Sandal</p>
+            </div>
+            <div class="Scarf-Cap">
+                <img src="../Assets/img/category-4.jpg" alt="">
+                <p class="caption">Scarf-Cap</p>
+            </div>
+            <div class="Shoes">
+                <img src="../Assets/img/category-5.jpg" alt="">
+                <p class="caption">Shoes</p>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="featured-buttons">
+            <button><strong>Featured</strong></button>
+            <button><strong>Popular</strong></button>
+            <button><strong>New Added</strong></button>
+        </div>
+        <div class="products">
+            <div class="one">
+                <div class="shirt-one">
+                    <div class="image-container">
+                        <div class="image-box">
+                            <div class="front">
+                                <img src="../Assets/img/product-1-1.jpg" alt="shirt-front">
+                            </div>
+                            <div class="back">
+                                <img src="../Assets/img/product-1-2.jpg" alt="shirt-back">
+                                <div class="icon-container">
+                                    <span class="icon-name">Quick View</span>
+                                    <div class="icon">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-1">
+                        <div class="details-1">
+                            <p id="p-1">Clothing</p>
+                            <h4 id="h-1">Colorful Pattern Shirts</h4>
+                            <p id="p-2">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                            <h4 id="h-2">$238.85 <span>$245.8</span></h4>
+                        </div>
+                        <div class="shop-button-1">
+                            <button><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="Hot">
+                        <p>Hot</p>
+                    </div>
+                </div>
+                <div class="shirt-two">
+                    <div class="image-container">
+                        <div class="image-box">
+                            <div class="front">
+                                <img src="../Assets/img/product-2-1.jpg" alt="shirt-front">
+                            </div>
+                            <div class="back">
+                                <img src="../Assets/img/product-2-2.jpg" alt="shirt-back">
+                                <div class="icon-container">
+                                    <span class="icon-name">Quick View</span>
+                                    <div class="icon">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-2">
+                        <div class="details-2">
+                            <p id="p-1">Clothing</p>
+                            <h4 id="h-1">Colorful Pattern Shirts</h4>
+                            <p id="p-2">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                            <h4 id="h-2">$238.85 <span>$245.8</span></h4>
+                        </div>
+                        <div class="shop-button-2">
+                            <button><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                        <div class="Hot">
+                            <p>Hot</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shirt-three">
+                    <div class="image-container">
+                        <div class="image-box">
+                            <div class="front">
+                                <img src="../Assets/img/product-3-1.jpg" alt="shirt-front">
+                            </div>
+                            <div class="back">
+                                <img src="../Assets/img/product-3-2.jpg" alt="shirt-back">
+                                <div class="icon-container">
+                                    <span class="icon-name">Quick View</span>
+                                    <div class="icon">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-3">
+                        <div class="details-3">
+                            <p id="p-1">Clothing</p>
+                            <h4 id="h-1">Colorful Pattern Shirts</h4>
+                            <p id="p-2">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                            <h4 id="h-2">$238.85 <span>$245.8</span></h4>
+                        </div>
+                        <div class="shop-button-3">
+                            <button><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                        <div class="Hot">
+                            <p>Hot</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="two">
+                <div class="shirt-one">
+                    <div class="image-container">
+                        <div class="image-box">
+                            <div class="front">
+                                <img src="../Assets/img/product-4-1.jpg" alt="shirt-front">
+                            </div>
+                            <div class="back">
+                                <img src="../Assets/img/product-4-2.jpg" alt="shirt-back">
+                                <div class="icon-container">
+                                    <span class="icon-name">Quick View</span>
+                                    <div class="icon">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-1">
+                        <div class="details-1">
+                            <p id="p-1">Clothing</p>
+                            <h4 id="h-1">Colorful Pattern Shirts</h4>
+                            <p id="p-2">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                            <h4 id="h-2">$238.85 <span>$245.8</span></h4>
+                        </div>
+                        <div class="shop-button-1">
+                            <button><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="Hot">
+                        <p>Hot</p>
+                    </div>
+                </div>
+                <div class="shirt-two">
+                    <div class="image-container">
+                        <div class="image-box">
+                            <div class="front">
+                                <img src="../Assets/img/product-5-1.jpg" alt="shirt-front">
+                            </div>
+                            <div class="back">
+                                <img src="../Assets/img/product-5-2.jpg" alt="shirt-back">
+                                <div class="icon-container">
+                                    <span class="icon-name">Quick View</span>
+                                    <div class="icon">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-2">
+                        <div class="details-2">
+                            <p id="p-1">Clothing</p>
+                            <h4 id="h-1">Colorful Pattern Shirts</h4>
+                            <p id="p-2">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                            <h4 id="h-2">$238.85 <span>$245.8</span></h4>
+                        </div>
+                        <div class="shop-button-2">
+                            <button><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                        <div class="Hot">
+                            <p>Hot</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shirt-three">
+                    <div class="image-container">
+                        <div class="image-box">
+                            <div class="front">
+                                <img src="../Assets/img/product-6-1.jpg" alt="shirt-front">
+                            </div>
+                            <div class="back">
+                                <img src="../Assets/img/product-6-2.jpg" alt="shirt-back">
+                                <div class="icon-container">
+                                    <span class="icon-name">Quick View</span>
+                                    <div class="icon">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-3">
+                        <div class="details-3">
+                            <p id="p-1">Clothing</p>
+                            <h4 id="h-1">Colorful Pattern Shirts</h4>
+                            <p id="p-2">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                            <h4 id="h-2">$238.85 <span>$245.8</span></h4>
+                        </div>
+                        <div class="shop-button-3">
+                            <button><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                        <div class="Hot">
+                            <p>Hot</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="three">
+                <div class="shirt-one">
+                    <div class="image-container">
+                        <div class="image-box">
+                            <div class="front">
+                                <img src="../Assets/img/product-7-1.jpg" alt="shirt-front">
+                            </div>
+                            <div class="back">
+                                <img src="../Assets/img/product-7-2.jpg" alt="shirt-back">
+                                <div class="icon-container">
+                                    <span class="icon-name">Quick View</span>
+                                    <div class="icon">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-1">
+                        <div class="details-1">
+                            <p id="p-1">Clothing</p>
+                            <h4 id="h-1">Colorful Pattern Shirts</h4>
+                            <p id="p-2">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                            <h4 id="h-2">$238.85 <span>$245.8</span></h4>
+                        </div>
+                        <div class="shop-button-1">
+                            <button><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                    <div class="Hot">
+                        <p>Hot</p>
+                    </div>
+                </div>
+                <div class="shirt-two">
+                    <div class="image-container">
+                        <div class="image-box">
+                            <div class="front">
+                                <img src="../Assets/img/product-8-1.jpg" alt="shirt-front">
+                            </div>
+                            <div class="back">
+                                <img src="../Assets/img/product-8-2.jpg" alt="shirt-back">
+                                <div class="icon-container">
+                                    <span class="icon-name">Quick View</span>
+                                    <div class="icon">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-2">
+                        <div class="details-2">
+                            <p id="p-1">Clothing</p>
+                            <h4 id="h-1">Colorful Pattern Shirts</h4>
+                            <p id="p-2">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                            <h4 id="h-2">$238.85 <span>$245.8</span></h4>
+                        </div>
+                        <div class="shop-button-2">
+                            <button><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                        <div class="Hot">
+                            <p>Hot</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="deals-box">
+        <div class="deal-1">
+
+        </div>
+        <div class="deal-2">
+            <img src="" alt="">
+        </div>
+    </div>
 </body>
+
 </html>
