@@ -150,7 +150,8 @@ nav a:hover{
 
 .compare_table{
     margin: 5% 10%;
-    text-align: center;  
+    text-align: center; 
+    border-color: rgb(230, 229, 234);
 }
 
 .compare_table td{
