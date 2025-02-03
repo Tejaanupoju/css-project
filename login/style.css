@@ -191,7 +191,14 @@ form button:hover {
     background-color: lightblue;
     display: flex;
 }
-
+.Newsletter img{
+    width: 30%;
+    height: 50%;
+    margin: 0%;
+    padding: 0%;
+    padding-left: 90px;
+    
+}
 .Newsletter .sign-in{
     width: 30%;
     height: 100%;
@@ -241,6 +248,7 @@ form button:hover {
     border: none;
     border-radius: 5px;
 }
+
 
 footer{
     width: 85%;
